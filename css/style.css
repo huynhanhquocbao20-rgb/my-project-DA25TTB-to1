@@ -1,0 +1,28 @@
+.container {
+    display: flex; /* Kích hoạt Flexbox */
+    border: 2px solid black;
+}
+
+.avatar {
+
+    padding: 10px;
+    border: 1px solid black; /* Độ dày 2px - Nét liền (solid) - Màu đen */
+    padding: 15px;           /* Khoảng cách từ chữ đến khung */
+    border-radius: 0;
+    width: 20%;
+	box-sizing: border-box;
+}
+.info{
+    width: 50%; /* Chia đều chiều rộng cho 2 div */
+    padding: 10px;
+    border: 1px solid black; /* Độ dày 2px - Nét liền (solid) - Màu đen */
+    padding: 15px;           /* Khoảng cách từ chữ đến khung */
+    border-radius: 0;
+    width: 85%;
+	box-sizing: border-box;
+}
+.info {
+	h3 .title {
+		color: #1a73e8;
+		font-weight: bold;
+	}
