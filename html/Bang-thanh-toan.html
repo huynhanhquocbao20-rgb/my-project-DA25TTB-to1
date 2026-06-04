@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng Thanh Toán</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="box">
+    <h2>Danh Sách Đơn Hàng</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên SP</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Đơn vị</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>A</td>
+                <td><input type="number" id="gia_A" value="50" oninput="tinhToan()"></td>
+                <td><input type="number" id="sl_A" value="10" oninput="tinhToan()"></td>
+                <td>thùng</td>
+                <td id="tien_A">0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>B</td>
+                <td><input type="number" id="gia_B" value="10" oninput="tincToan()"></td>
+                <td><input type="number" id="sl_B" value="20" oninput="tinhToan()"></td>
+                <td>bao</td>
+                <td id="tien_B">0</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>C</td>
+                <td><input type="number" id="gia_C" value="20" oninput="tinhToan()"></td>
+                <td><input type="number" id="sl_C" value="90" oninput="tinhToan()"></td>
+                <td>túi</td>
+                <td id="tien_C">0</td>
+            </tr>
+            <tr class="tong-ket">
+                <td colspan="5">Tổng thanh toán:</td>
+                <td id="tong_thanh_toan">0</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    <link rel="stylesheet" href="../css/style.css">
+</body>
+</html>
