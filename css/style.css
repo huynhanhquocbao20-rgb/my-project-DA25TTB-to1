@@ -1,73 +1,83 @@
- body {
-    font-family: Arial, sans-serif;
-    background-color: #fafafa;
-    margin: 40px 20px; /* Căn lề trên 40px, lề trái 20px giúp bảng sát bên trái */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.box {
-    background: #ffffff;
-    padding: 15px;
-    max-width: 650px;
-    margin: 0; /* Xóa căn giữa, đẩy toàn bộ hộp về bên trái */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f5f5f5;
 }
 
-h2 {
-    text-align: left; /* Tiêu đề căn trái */
-    color: #333333;
-    margin-bottom: 15px;
-    font-size: 20px;
+.container{
+    width:550px;
+    background:white;
+    border:4px solid #4a4a63;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse; /* Bỏ viền đôi thô cứng */
+.top-buttons{
+    display:flex;
 }
 
-th, td {
-    padding: 10px;
-    border-bottom: 1px solid #eeeeee; /* Đường gạch ngang mảnh tinh tế */
-    text-align: center;
-    color: #444444;
-    font-size: 14px;
+.top-buttons button{
+    width:50%;
+    padding:18px;
+    border:none;
+    background:#fff;
+    font-size:18px;
+    cursor:pointer;
 }
 
-th {
-    background-color: #f5f5f5;
-    font-weight: bold;
-    color: #222222;
+.top-buttons .active{
+    background:#ececec;
 }
 
-/* --- ĐỔI THÀNH Ô VUÔNG VÀ XÓA MŨI TÊN TĂNG GIẢM --- */
-input {
-    width: 55px;
-    padding: 5px;
-    text-align: center;
-    border: 1px solid #cccccc;
-    border-radius: 0px; /* Góc vuông hoàn toàn, không bo tròn */
-    outline: none;
+form{
+    padding:35px 25px;
 }
 
-/* Ẩn mũi tên trên Chrome, Safari, Edge */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.input-box{
+    margin-bottom:25px;
 }
 
-input:focus {
-    border-color: #666666; /* Khi nhấn vào ô vuông viền sẽ đậm lên một chút */
+.input-box input{
+    width:100%;
+    padding:15px;
+    border:2px solid #d6d6d6;
+    font-size:16px;
 }
 
-/* Hàng hiển thị tổng thanh toán */
-.tong-ket {
-    font-weight: bold;
-    background-color: #fcfcfc;
+.password-box{
+    position:relative;
 }
 
-.tong-ket td:first-child {
-    text-align: right; /* Chữ "Tổng thanh toán" căn sát lề phải của ô */
+.password-box span{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#666;
+    cursor:pointer;
 }
 
-#tong_thanh_toan {
-    color: #c9302c; /* Màu đỏ nhẹ cho tổng tiền */
+.create-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#2f9db1;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
 }
+.input-box input::placeholder{
+    transition: 0.2s;
+}
+
+.input-box input:focus::placeholder{
+    opacity: 0;
+}
+

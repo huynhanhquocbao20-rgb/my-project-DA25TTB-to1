@@ -3,59 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Login Form</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Menu Điều Hướng</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <form id="formLogin">
+    <div class="login-box" style="text-align: center;">
 
-        <div class="login-box">
+        <h2>DANH MỤC TRANG</h2>
 
-            <h2>Login</h2>
+        <div class="button-group" style="display: flex; flex-direction: column; gap: 10px;">
+            
+            <a href="dangky.html">
+                <button type="button" class="login-btn" style="width: 100%; margin: 0;">Form Đăng Ký</button>
+            </a>
 
-            <div class="form-group">
-                <label for="txtUsername">
-                    Username:
-                </label>
+            <a href="html/quan-tri.html">
+                <button type="button" class="login-btn" style="width: 100%; margin: 0; background-color: #4b5563;">Giao diện Đăng Nhập</button>
+            </a>
 
-                <input type="text"
-                       id="txtUsername"
-                       name="txtUsername">
-            </div>
-
-            <div class="form-group">
-                <label for="txtPassword">
-                    Password:
-                </label>
-
-                <input type="password"
-                       id="txtPassword"
-                       name="txtPassword">
-            </div>
-
-            <div class="button-group">
-
-                <button type="submit" class="login-btn">
-                    Login
-                </button>
-
-                <button type="reset" class="cancel-btn">
-                    Cancel               
-            </div>
+            <a href="html/quan-tri.html">
+                <button type="button" class="cancel-btn" style="width: 100%; margin: 0;">Trang Quản Trị</button>
+            </a>
 
         </div>
 
-    </form>
-    <div>
-        <button>
-            <a href="html/bang-cuu-chuong.html">Bảng cửu chương</a>
-        </button>
-        <button>
-            <a href="html/Bang-thanh-toan.html">Bảng thanh toán</a>
-        </button>
     </div>
+
 </body>
 </html>
